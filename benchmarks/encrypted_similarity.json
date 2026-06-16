@@ -1,0 +1,98 @@
+{
+  "config": {
+    "n_centroids": 5,
+    "dim": 16,
+    "key_bits": 1024,
+    "n_pairs": 10
+  },
+  "timing": {
+    "keygen_ms": 454.53,
+    "encrypt_per_vector_ms": 390.84,
+    "dot_product_encrypted_ms": 31.71,
+    "decrypt_per_vector_ms": 126.07,
+    "plaintext_all_pairs_ms": 0.3205
+  },
+  "accuracy": {
+    "max_absolute_error": 7.1e-09,
+    "mean_absolute_error": 5e-09,
+    "note": "Paillier is exact for integers; floating-point encoding introduces sub-1e-6 error"
+  },
+  "projection_512d": {
+    "projected_encrypt_per_vector_ms": 12506.9,
+    "projected_dot_product_ms": 1014.6,
+    "projected_decrypt_per_vector_ms": 4034.2,
+    "note": "Linear extrapolation from 16D to 512D (32x)"
+  },
+  "pairs": [
+    {
+      "i": 0,
+      "j": 1,
+      "plaintext_sim": 0.093323,
+      "encrypted_sim": 0.093323,
+      "abs_error": 5e-09
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "plaintext_sim": -0.171472,
+      "encrypted_sim": -0.171472,
+      "abs_error": 4.5e-09
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "plaintext_sim": 0.012023,
+      "encrypted_sim": 0.012023,
+      "abs_error": 7.1e-09
+    },
+    {
+      "i": 0,
+      "j": 4,
+      "plaintext_sim": -0.017823,
+      "encrypted_sim": -0.017823,
+      "abs_error": 6e-09
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "plaintext_sim": -0.533123,
+      "encrypted_sim": -0.533123,
+      "abs_error": 6.8e-09
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "plaintext_sim": 0.402336,
+      "encrypted_sim": 0.402336,
+      "abs_error": 4.9e-09
+    },
+    {
+      "i": 1,
+      "j": 4,
+      "plaintext_sim": 0.221088,
+      "encrypted_sim": 0.221088,
+      "abs_error": 3.6e-09
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "plaintext_sim": -0.032126,
+      "encrypted_sim": -0.032126,
+      "abs_error": 2e-10
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "plaintext_sim": 0.038201,
+      "encrypted_sim": 0.038201,
+      "abs_error": 7.1e-09
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "plaintext_sim": 0.045557,
+      "encrypted_sim": 0.045557,
+      "abs_error": 4.4e-09
+    }
+  ]
+}
